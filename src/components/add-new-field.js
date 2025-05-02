@@ -1,5 +1,5 @@
 import SideBar from './side-top-nav-bars'
-
+import { Link } from 'react-router-dom';
 
 function NewField(){
     return(
@@ -8,13 +8,12 @@ function NewField(){
             <SideBar/>
             
             
-
-        <div class="new-field-container">
             
-                    <div class="popup">
+        <div class="new-field-container">
+        <div class="popup">
             <div class="header">
                 <h2>Add New Field</h2>
-                <button class="close-btn">&times;</button>
+                <Link to="/"><button class="close-btn">&times;</button></Link>
             </div>
 
             <div class="form-row">
@@ -68,7 +67,7 @@ function NewField(){
             </div>
             </div>
 
-
+     
 
   
         </div>

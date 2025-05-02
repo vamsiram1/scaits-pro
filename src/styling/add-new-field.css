@@ -1,17 +1,19 @@
 
 
+.new-field-container{
 
-.new-field-container {
-  padding-top: 80.5px;
-  margin-left: 200px;
-  width: calc(100% - -200px);
-  background-color: black;
-  max-height: 90vh;
-
-  display: flex;
-  justify-content: center;
+  display:flex;
+  justify-content:center;
   align-items: center;
+
+  margin-left:240px;
+  margin-top:56px;
+  height:844px;
+  width:1160px;
+  background-color:black;
+
 }
+
 
 
 /* Popup */
@@ -30,11 +32,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left:0px;
 }
 
 .header h2 {
   font-size: 18px;
-  margin: 0;
+  margin-left:0;
 }
 
 .close-btn {
@@ -103,4 +106,5 @@ input {
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
+  width:300px;
 }

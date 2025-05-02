@@ -10,7 +10,6 @@ import './styling/edit-comp-styling.css';
 import DataTable from './components/data-component';
 import NewField from './components/add-new-field';
 import EditField from './components/edit-component';
-
 import { BrowserRouter,Routes,Route} from 'react-router-dom';
 
 

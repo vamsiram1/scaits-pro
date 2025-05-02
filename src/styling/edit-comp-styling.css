@@ -1,23 +1,16 @@
+.field-container {
+  display:flex;
+  justify-content:center;
+  align-items: center;
 
-
-
-.new-field-container{
-    margin: -21px;
-    margin-left:220px;
-    width:80.5%;
-    background-color:black;
-    height:95vh;
-
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-
-
+  margin-left:240px;
+  margin-top:56px;
+  height:844px;
+  width:1160px;
+  background-color:black;
 }
 
-
-/* Popup */
-.popup {
+.field-popup {
   background: white;
   width: 400px;
   padding: 20px;
@@ -26,49 +19,46 @@
   position: relative;
 }
 
-/* Header */
-.header {
+.field-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header h2 {
+.field-header h2 {
   font-size: 18px;
   margin: 0;
 }
 
-.close-btn {
+.field-close-btn {
   background: none;
   border: none;
   font-size: 22px;
   cursor: pointer;
 }
 
-/* Form Rows */
-.form-row {
+.field-form-row {
   display: flex;
   gap: 10px;
   margin-top: 15px;
 }
 
-.form-group {
+.field-form-group {
   display: flex;
   flex-direction: column;
 }
 
-.form-group label {
+.field-form-group label {
   font-size: 12px;
   margin-bottom: 4px;
   color: #555;
 }
 
-
-.form-group.small input {
+.field-form-group.small input {
   width: 70px;
 }
 
-.form-group.big input {
+.field-form-group.big input {
   width: 180px;
 }
 
@@ -79,14 +69,13 @@ input {
   font-size: 14px;
 }
 
-/* Buttons */
-.button-group {
+.field-button-group {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-.delete-btn {
+.field-delete-btn {
   background: none;
   border: 1px solid red;
   color: red;
@@ -96,7 +85,7 @@ input {
   font-weight: bold;
 }
 
-.edit-btn {
+.field-edit-btn {
   background: #3b28ff;
   border: none;
   color: white;
@@ -104,4 +93,5 @@ input {
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
+  width:300px;
 }
