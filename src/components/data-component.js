@@ -24,29 +24,29 @@ function DataTable() {
         { CITY_ID: "17", CITY_CODE: "Rajahmundry", CITY_NAME: "Rajahmundry Branch", STATUS: "Active", DISTRICT_ID: "D13", ZONE: "Z13", PAYROLL_CITY_CODE: "PC13", SYNC_STATUS: "01", SYNC_DATA: "Rajahmundry" },
     ];
 
-    const [currentPage, setCurrentPage] = useState(1);
-    const rowsPerPage = 16;
+        const [currentPage, setCurrentPage] = useState(1);
+        const rowsPerPage = 16;
 
 
-    const indexOfLastRow = currentPage * rowsPerPage;
-    const indexOfFirstRow = indexOfLastRow - rowsPerPage;
-    const currentRows = data.slice(indexOfFirstRow, indexOfLastRow);
+        const indexOfLastRow = currentPage * rowsPerPage;
+        const indexOfFirstRow = indexOfLastRow - rowsPerPage;
+        const currentRows = data.slice(indexOfFirstRow, indexOfLastRow);
 
 
-    const totalPages = Math.ceil(data.length / rowsPerPage);
+        const totalPages = Math.ceil(data.length / rowsPerPage);
 
 
-    const goToNextPage = () => {
-        if (currentPage < totalPages) {
-            setCurrentPage(currentPage + 1);
-        }
-    };
+        const goToNextPage = () => {
+            if (currentPage < totalPages) {
+                setCurrentPage(currentPage + 1);
+            }
+        };
 
-    const goToPreviousPage = () => {
-        if (currentPage > 1) {
-            setCurrentPage(currentPage - 1);
-        }
-    };
+        const goToPreviousPage = () => {
+            if (currentPage > 1) {
+                setCurrentPage(currentPage - 1);
+            }
+        };
 
     return (
         <>
